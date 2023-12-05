@@ -30,8 +30,8 @@ app.post('/checkout', async (req, res) => {
       payment_method_types: ['card'],
       line_items: lineItems,
       mode: 'payment',
-      success_url: 'https://m3lky.github.io/tech-store',
-      cancel_url: 'https://m3lky.github.io/tech-store',
+      success_url: 'https://tech-store-hazel.vercel.app/',
+      cancel_url: 'https://tech-store-hazel.vercel.app/',
     });
 
     res.json({ sessionId: session.id });
